@@ -41,13 +41,8 @@ class WSScenario(Scenario):
         """Useful hook for post propagation"""
 
         if propagation_round == 0:
-            ann = replace(
-                engine.as_graph.as_dict[4].policy.local_rib.get(Prefixes.PREFIX.value),
-                withdraw=True,
-            )
-
-            engine.as_graph.as_dict[4].policy.local_rib.pop(Prefixes.PREFIX.value, None)
-            engine.as_graph.as_dict[4].policy.ribs_out.remove_entry(
-                3, Prefixes.PREFIX.value
-            )
-            engine.as_graph.as_dict[4].policy.send_q.add_ann(3, ann)
+            for victim_asn in self.victim_asns:
+                as_obj = engine.as_graph.as_dict[victim_asn]
+                as_obj.policy.prep_withdrawal_for_next_propagation(
+                    Prefixes.PREFIX.value
+                )

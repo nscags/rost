@@ -31,7 +31,7 @@ classifiers = [
     "Intended Audience :: Developers"
 ]
 dependencies = [
-    "bgpy_pkg~=11.0",
+    "bgpy_pkg~=12.0",
 ]
 
 [project.urls]
@@ -42,7 +42,7 @@ rost = "rost.__main__:main"
 
 [project.optional-dependencies]
 test = [
-    "bgpy_pkg[test]~=11.0",
+    "bgpy_pkg[test]~=12.0",
 ]
 
 [tool.setuptools]
