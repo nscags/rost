@@ -21,10 +21,4 @@ as_graph_info_000 = ASGraphInfo(
             CPLink(provider_asn=3, customer_asn=4),
         ]
     ),
-    diagram_ranks=(
-        (4,),
-        (3,),
-        (2,),
-        (1,),
-    ),
 )
