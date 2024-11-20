@@ -4,7 +4,6 @@ from bgpy.shared.enums import Relationships as Rels
 from bgpy.simulation_engine.policies.bgp import BGPFull
 
 if TYPE_CHECKING:
-    from bgpy.as_graphs import AS
     from bgpy.simulation_engine import Announcement as Ann
 
 

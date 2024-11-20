@@ -1,5 +1,5 @@
-from bgpy.as_graphs.base.links import CustomerProviderLink as CPLink, PeerLink
 from bgpy.as_graphs import ASGraphInfo
+from bgpy.as_graphs.base.links import CustomerProviderLink as CPLink
 
 r"""
 Graph:  1

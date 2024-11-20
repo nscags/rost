@@ -1,11 +1,10 @@
-from typing import TYPE_CHECKING, Optional
 from dataclasses import replace
+from typing import TYPE_CHECKING, Optional
 
 from bgpy.shared.enums import (
     Prefixes,
     Relationships,
     Timestamps,
-    SpecialPercentAdoptions,
 )
 from bgpy.simulation_framework.scenarios.scenario import Scenario
 
@@ -22,7 +21,6 @@ class WSScenario(Scenario):
         *,
         engine: Optional["BaseSimulationEngine"] = None,
     ) -> tuple["Ann", ...]:
-        """ """
 
         anns = list()
         for victim_asn in self.victim_asns:

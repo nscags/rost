@@ -1,5 +1,3 @@
-from frozendict import frozendict
-
 from bgpy.simulation_engine import BGPFull
 from bgpy.simulation_framework import ScenarioConfig
 from bgpy.tests.engine_tests.utils import EngineTestConfig

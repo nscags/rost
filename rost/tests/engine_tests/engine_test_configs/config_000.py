@@ -1,9 +1,6 @@
-from frozendict import frozendict
-
 from bgpy.simulation_engine import BGPFull
-from bgpy.simulation_framework import ScenarioConfig
+from bgpy.simulation_framework import ScenarioConfig, ValidPrefix
 from bgpy.tests.engine_tests.utils import EngineTestConfig
-from bgpy.simulation_framework import ValidPrefix
 
 from .as_graph_info_000 import as_graph_info_000
 
