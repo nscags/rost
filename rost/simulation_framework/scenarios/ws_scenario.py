@@ -1,15 +1,20 @@
 from typing import TYPE_CHECKING, Optional
 from dataclasses import replace
 
-from bgpy.shared.enums import Prefixes, Relationships, Timestamps, SpecialPercentAdoptions
+from bgpy.shared.enums import (
+    Prefixes,
+    Relationships,
+    Timestamps,
+    SpecialPercentAdoptions,
+)
 from bgpy.simulation_framework.scenarios.scenario import Scenario
 
 if TYPE_CHECKING:
     from bgpy.simulation_engine import Announcement as Ann
     from bgpy.simulation_engine import BaseSimulationEngine
 
-class WSScenario(Scenario):
 
+class WSScenario(Scenario):
     min_propagation_rounds: int = 2
 
     def _get_announcements(
@@ -17,8 +22,7 @@ class WSScenario(Scenario):
         *,
         engine: Optional["BaseSimulationEngine"] = None,
     ) -> tuple["Ann", ...]:
-        """
-        """
+        """ """
 
         anns = list()
         for victim_asn in self.victim_asns:
