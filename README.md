@@ -28,6 +28,6 @@ cd rost/tests/engine_tests
 # run pytest
 pytest
 
-# outputs graphs
+# output graphs shown here
 rost/rost/test/engine_test/engine_test_outputs
 ```
