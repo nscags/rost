@@ -17,11 +17,17 @@ source venv/bin/activate
 pip install bgpy_pkg
 
 # clone repo
-git clone git@github.com:nscags/rost_sims.git
+git clone git@github.com:nscags/rost.git
+
+cd rost
+pip install -e .[test]
 
 # navigate to engine_tests dir
-cd rost_sims/rost/tests/engine_tests
+cd rost/tests/engine_tests
 
 # run pytest
 pytest
+
+# outputs graphs
+rost/rost/test/engine_test/engine_test_outputs
 ```
