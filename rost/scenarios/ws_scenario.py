@@ -21,7 +21,6 @@ class WSScenario(Scenario):
         *,
         engine: Optional["BaseSimulationEngine"] = None,
     ) -> tuple["Ann", ...]:
-
         anns = list()
         for victim_asn in self.victim_asns:
             anns.append(
